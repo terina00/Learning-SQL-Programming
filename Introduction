@@ -1,0 +1,6 @@
+SELECT * FROM people;
+
+SELECT first_name FROM people;
+
+SELECT first_name, state_code, quiz_points FROM people;
+
