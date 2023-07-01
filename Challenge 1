@@ -1,1 +1,4 @@
+SELECT first_name, last_name, team, quiz_points, shirt_or_hat
+FROM people
+ORDER BY shirt_or_hat, team;
 
