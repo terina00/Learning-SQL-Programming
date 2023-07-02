@@ -1,0 +1,71 @@
+INSERT INTO people (first_name) VALUES ('BOB');
+
+
+SELECT *
+FROM people;
+
+
+INSERT INTO people 
+(first_name, last_name, state_code, city, shirt_or_hat)
+VALUES
+('Mary', 'Hamilton', 'OR', 'Portland', 'hat');
+
+INSERT INTO people 
+(first_name, last_name)
+VALUES
+('George', 'White'),
+('Jenn', 'Smith'),
+('Carol', NULL)
+;
+
+UPDATE
+SET
+WHERE;
+
+SELECT last_name FROM people WHERE first_name = 'Carlos';
+
+
+SELECT last_name FROM people WHERE last_name = 'Morrrison';
+
+UPDATE people 
+SET last_name = 'Morrison'
+WHERE last_name = 'Morrrison';
+
+SELECT *
+ FROM people 
+ WHERE first_name = 'Carlos' AND city = 'Houston';
+ 
+ SELECT * 
+ FROM people
+ WHERE id_number = 175;
+
+ SELECT *
+ FROM people 
+WHERE first_name = 'BOB';
+
+UPDATE people
+SET first_name = 'Bob'
+WHERE id_number = 1001;
+
+SELECT * 
+FROM people 
+WHERE company = 'Fisher LLC';
+
+UPDATE people
+SET company = 'Megacorp INC'
+WHERE company = 'Fisher LLC';
+
+DELETE 
+FROM 
+WHERE
+
+DELETE 
+FROM people
+WHERE id_number = 1001;
+
+DELETE 
+FROM people
+WHERE quiz_points IS NULL;
+
+
+SELECT * FROM people;
