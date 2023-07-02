@@ -1,0 +1,11 @@
+Challege 3
+
+//Show maximum score and average score in each state.
+//Sort by average score, with the largest at the top.
+
+
+SELECT states.state_name, MAX(people.quiz_points), AVG(people.quiz_points)
+FROM people
+JOIN states ON people.state_code = states.state_abbrev
+GROUP BY state_code
+ORDER BY AVG(quiz_points) DESC;
