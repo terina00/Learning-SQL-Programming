@@ -1,0 +1,21 @@
+
+
+SELECT * FROM people;
+SELECT * FROM states;
+
+SELECT state_code, COUNT(shirt_or_hat)
+FROM people
+WHERE shirt_or_hat = 'hat'
+GROUP BY state_code;
+
+
+SELECT states.state_name, COUNT(people.shirt_or_hat)
+FROM states
+JOIN people ON people.state_code = states.state_abbrev
+WHERE people.shirt_or_hat = 'hat'
+GROUP BY people.shirt_or_hat, states.state_name;
+
+SELECT states.division, people.team, COUNT(people.team)
+FROM states
+JOIN people ON states.state_abbrev = people.state_code
+GROUP BY states.division, people.team;
